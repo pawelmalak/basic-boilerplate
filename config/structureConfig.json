@@ -1,0 +1,48 @@
+{
+  "folders" : [
+    "src",
+      "src/css",
+      "src/scss",
+        "src/scss/helpers",
+        "src/scss/vendors",
+        "src/scss/base",
+        "src/scss/layout",
+        "src/scss/components",
+        "src/scss/pages",
+        "src/scss/themes",
+      "src/js",
+      "src/templates",
+        "src/templates/includes",
+        "src/templates/pages",
+      "src/images",
+    "tmp",
+    "dist"
+  ],
+  "files" : [
+    {
+      "name": "main.js",
+      "path": "src/js",
+      "data": ""
+    },
+    {
+      "name": "main.scss",
+      "path": "src/scss",
+      "data": ""
+    },
+    {
+      "name": "index.html",
+      "path": "src",
+      "data": ""
+    },
+    {
+      "name": "index.pug",
+      "path": "src/templates",
+      "data": "doctype html"
+    },
+    {
+      "name": "head.pug",
+      "path": "src/templates/includes",
+      "data": "title Document\n\tmeta(charset=\"utf-8\") \n\tlink(rel=\"stylesheet\" href=\"css/main.css\")"
+    }
+  ]
+}

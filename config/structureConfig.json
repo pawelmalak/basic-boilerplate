@@ -42,7 +42,7 @@
     {
       "name": "head.pug",
       "path": "src/templates/includes",
-      "data": "title Document\n\tmeta(charset=\"utf-8\") \n\tlink(rel=\"stylesheet\" href=\"css/main.css\")"
+      "data": "title Document \nmeta(charset=\"utf-8\") \nlink(rel=\"stylesheet\" href=\"css/main.css\")"
     }
   ]
 }

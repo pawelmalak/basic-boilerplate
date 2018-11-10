@@ -43,6 +43,11 @@
       "name": "head.pug",
       "path": "src/templates/includes",
       "data": "title Document \nmeta(charset=\"utf-8\") \nlink(rel=\"stylesheet\" href=\"css/main.css\")"
+    },
+    {
+      "name": ".gitignore",
+      "path": ".",
+      "data": ".gitignore \nnode_modules"
     }
   ]
 }

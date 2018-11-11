@@ -41,7 +41,7 @@
     {
       "name": ".gitignore",
       "path": ".",
-      "data": ".gitignore \nnode_modules"
+      "data": ".gitignore \nnode_modules \ntmp"
     }
   ]
 }

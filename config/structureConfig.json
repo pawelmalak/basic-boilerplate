@@ -1,7 +1,6 @@
 {
   "folders" : [
     "src",
-      "src/css",
       "src/scss",
         "src/scss/helpers",
         "src/scss/vendors",
@@ -27,11 +26,6 @@
     {
       "name": "main.scss",
       "path": "src/scss",
-      "data": ""
-    },
-    {
-      "name": "index.html",
-      "path": "src",
       "data": ""
     },
     {

@@ -27,7 +27,7 @@ gulp.task('start', () => {
 gulp.task('sass', () => {
   return gulp.src('src/scss/main.scss')
     .pipe(sass())
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest('tmp/css'));
 });
 
 // Compile Pug to HTML
@@ -36,7 +36,7 @@ gulp.task('pug', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('src'));
+    .pipe(gulp.dest('tmp'));
 });
 
 // Watchers
@@ -51,7 +51,7 @@ gulp.task('work', ['pug','sass','server'], function() {
 gulp.task('server', function() {
   sync.init({
       server: {
-          baseDir: './src'
+          baseDir: './tmp'
       }
   });
 });

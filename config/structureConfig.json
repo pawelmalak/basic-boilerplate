@@ -13,7 +13,8 @@
       "src/templates",
         "src/templates/includes",
         "src/templates/pages",
-      "src/images",
+      "src/assets",
+        "src/assets/images",
     "tmp",
     "dist"
   ],

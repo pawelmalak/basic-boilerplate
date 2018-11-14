@@ -15,57 +15,51 @@ Using terminal/command line move into project directory and run `npm install` to
 
 `gulp start` will create the following structure:
 ```
-├── app
-│   ├── css
-│   │   ├── **/*.css
-│   ├── favicon.ico
-│   ├── images
-│   ├── index.html
+├── src
+│   ├── scss
+│   │   ├── helpers
+│   │   ├── vendors
+│   │   ├── base
+│   │   ├── layout
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── themes
+│   │   └── main.scss
 │   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
+│   │   └── main.js
+│   ├── templates
+│   │   ├── includes
+│   │   │   └── head.pug
+│   │   ├── pages
+│   │   └── index.pug
+│   └── assets
+│   │   └── images
+├── tmp
+├── dist
 └── .gitignore
 ```
 
-├── app
+`gulp work` is the main development task. It will do a few things:
+1. Compile Sass and Pug into CSS and HTML and put them into /tmp folder creating the following structure:
+```
+├── tmp
 │   ├── css
-│   │   ├── **/*.css
-│   ├── favicon.ico
-│   ├── images
-│   ├── index.html
+│   │   └── main.css
 │   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
-└── .gitignore
+│   │   └── main.js
+│   ├── pages
+│   ├── assets
+│   │   └── images
+│   └── index.html
+```
+2. Create server using this directory as a base folder and refresh the browser window
+3. Repeat above on every saved file with `.js / .pug / .scss` extension in /src folder
 
-```
-gulp start
-```
-Starts web server 
-```
-gulp work
-```
+`gulp build` is used to make production folder with the same structure as with `gulp work`. It will also perform the following tasks:
+1. Compile Sass into CSS, prefix, minify and put it into /dist/css folder
 
-```
-gulp build
-```
+// todo
 
-src — source files, pre-processed, un-minified.
+<!-- src — source files, pre-processed, un-minified.
 tmp — development files, pre-processed, un-minified. The directory where you will be running the web server.
-dist — production files, processed, minified.
+dist — production files, processed, minified. -->

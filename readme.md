@@ -13,7 +13,7 @@ Using terminal/command line move into project directory and run `npm install` to
 
 ## Usage
 
-`gulp start` will create the following structure:
+:file_folder: `gulp start` will create the following structure:
 ```
 ├── src
 │   ├── scss
@@ -39,7 +39,7 @@ Using terminal/command line move into project directory and run `npm install` to
 └── .gitignore
 ```
 
-`gulp work` is the main development task. It will do a few things:
+:wrench: `gulp work` is the main development task. It will do a few things:
 1. Compile Sass and Pug into CSS and HTML and put them into /tmp folder creating the following structure:
 ```
 ├── tmp
@@ -55,7 +55,7 @@ Using terminal/command line move into project directory and run `npm install` to
 2. Create server using this directory as a base folder and refresh the browser window
 3. Repeat above on every saved file with `.js / .pug / .scss` extension in /src folder
 
-`gulp build` is used to make production folder with the same structure as with `gulp work`. It will also perform the following tasks:
+:hammer: `gulp build` is used to make production folder with the same structure as with `gulp work`. It will also perform the following tasks:
 1. Compile Sass into CSS, prefix, minify and put it into /dist/css folder
 
 // todo

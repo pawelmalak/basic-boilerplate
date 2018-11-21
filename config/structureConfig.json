@@ -47,7 +47,7 @@
     {
       "name": "palette.scss",
       "path": "src/scss/helpers",
-      "data": ".gitignore \nnode_modules \ntmp",
+      "data": "// Colors\n$red-light: rgb(225, 95, 95);\n$red-medium: rgb(208, 59, 61);\n$red-strong: rgb(161, 22, 25);\n$orange-light: rgb(236, 133, 75);\n$orange-medium: rgb(226, 106, 45);\n$orange-strong: rgb(189, 82, 30);\n$yellow-light: rgb(248, 199, 97);\n$yellow-medium: rgb(229, 175, 66);\n$yellow-strong: rgb(155, 110, 27);\n$lime-light: rgb(138, 191, 59);\n$lime-medium: rgb(113, 166, 34);\n$lime-strong: rgb(88, 134, 25);\n$green-light: rgb(76, 163, 85);\n$green-medium: rgb(56, 134, 58);\n$green-strong: rgb(30, 103, 34);\n$cyan-light: rgb(50, 182, 194);\n$cyan-medium: rgb(20, 134, 144);\n$cyan-strong: rgb(11, 96, 105);\n$blue-light: rgb(56, 141, 208);\n$blue-medium: rgb(21, 100, 166);\n$blue-strong: rgb(0, 53, 95);\n// Shadows\n// todo",
       "special": true
     }
   ]

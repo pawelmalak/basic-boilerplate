@@ -103,5 +103,5 @@ gulp.task('build', ['styles', 'photos'], () => {
 gulp.task('palette', () => {
   let palette = config.files[5];
   fs.writeFileSync(`${palette.path}/${palette.name}`, palette.data);
-  console.log('🎨 file created!');
+  console.log('🎨  file created!');
 });

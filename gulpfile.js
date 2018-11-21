@@ -91,8 +91,11 @@ gulp.task('photos', () => {
     .pipe(gulp.dest('dist/assets/images'))
 });
 
-// Main building task
+gulp.task('pages', () => {
+  // this task will move html files into /dist folder
+});
 
+// Main building task
 gulp.task('build', ['styles', 'photos'], () => {
   return 0;
 });

@@ -43,6 +43,12 @@
       "name": ".gitignore",
       "path": ".",
       "data": ".gitignore \nnode_modules \ntmp"
+    },
+    {
+      "name": "palette.scss",
+      "path": "src/scss/helpers",
+      "data": ".gitignore \nnode_modules \ntmp",
+      "special": true
     }
   ]
 }

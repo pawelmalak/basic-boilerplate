@@ -63,3 +63,5 @@ Using terminal/command line move into project directory and run `npm install` to
 <!-- src — source files, pre-processed, un-minified.
 tmp — development files, pre-processed, un-minified. The directory where you will be running the web server.
 dist — production files, processed, minified. -->
+
+:art: `gulp palette` - work in progress

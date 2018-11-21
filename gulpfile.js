@@ -19,9 +19,11 @@ gulp.task('start', () => {
   });
 
   config.files.forEach(file => {
-    if (!fs.existsSync(`${file.path}/${file.name}`)) {
-      fs.writeFileSync(`${file.path}/${file.name}`, file.data);
-      console.log('📄  file created:', `${file.name} at ${file.path}`);
+    if (!file.special) {
+      if (!fs.existsSync(`${file.path}/${file.name}`)) {
+        fs.writeFileSync(`${file.path}/${file.name}`, file.data);
+        console.log('📄  file created:', `${file.name} at ${file.path}`);
+      }
     }
   });
 });
@@ -93,4 +95,13 @@ gulp.task('photos', () => {
 
 gulp.task('build', ['styles', 'photos'], () => {
   return 0;
+});
+
+
+
+// task in progress
+gulp.task('palette', () => {
+  let palette = config.files[5];
+  fs.writeFileSync(`${palette.path}/${palette.name}`, palette.data);
+  console.log('🎨 file created!');
 });

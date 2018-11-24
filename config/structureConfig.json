@@ -37,7 +37,7 @@
     {
       "name": "head.pug",
       "path": "src/templates/includes",
-      "data": "title Document\nmeta(charset=\"utf-8\") \nlink(rel=\"stylesheet\" href=\"css/main.css\") \nmeta(name=\"viewport\" content=\"width=device-width, initial-scale=1\")"
+      "data": "meta(charset=\"utf-8\") \nlink(rel=\"stylesheet\" href=\"css/main.css\") \nmeta(name=\"viewport\" content=\"width=device-width, initial-scale=1\")"
     },
     {
       "name": ".gitignore",
